@@ -5,7 +5,11 @@ no hay clamp de camara
 no use las fuentes q usa brackeys
 no hice la animacion de la explision igual, bah
 
+hay partes q falta optimizar para cel
 
+no hice el ep 15: sobre efectos de particula del laser -.-""
+
+no hago las animaciones del canvas de game over
 
 
 */

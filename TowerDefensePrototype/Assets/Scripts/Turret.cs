@@ -4,18 +4,31 @@ using UnityEngine;
 public class Turret : MonoBehaviour {
 
 	private Transform target;
+	private EnemyMovement targetEnemy;
 
-	[Header("Attributes")]
+	[Header("General")]
 	public float range = 15f;
-		public float fireRate = 1f;
+
+	[Header("Use Bullets (default)")]
+
+	public GameObject bulletPrefab;
+	public float fireRate = 1f;
 	private float fireCountDown = 0f;
+
+	[Header("Use Laser")]
+	public bool useLaser = false;
+
+	public int damageOverTime = 30;
+	public float slowPct = .5f;
+
+	public LineRenderer lineRenderer;
 
 	[Header("Unity Setup Fields")]
 	public string enemyTag = "Enemy";
 	public Transform partToRotate;
 	public float turnSpeed = 10f;
 
-	public GameObject bulletPrefab;
+	
 	public Transform firePoint;
 
 
@@ -46,6 +59,7 @@ public class Turret : MonoBehaviour {
 
 				if (nearestEnemy != null && shortestDistance <= range) {
 					target = nearestEnemy.transform;
+					targetEnemy = nearestEnemy.GetComponent<EnemyMovement>();
 				} else {
 					target = null;
 				}
@@ -57,20 +71,38 @@ public class Turret : MonoBehaviour {
 		void Update () {
 				
 				if (target == null) {
+
+					if(useLaser) {
+							if (lineRenderer.enabled){
+								lineRenderer.enabled = false;
+							}
+					}
+
 					return;
 				}
 
-				//rotate targetlock on
+				LockOnTarget();
+
+				if (useLaser) {
+					Laser();
+				} else {
+
+					if (fireCountDown <= 0f) {
+						Shoot();
+						fireCountDown = 1f /fireRate;
+						} 
+						
+						fireCountDown -= Time.deltaTime;
+					}
+
+		}
+
+		void LockOnTarget() {
+			//rotate targetlock on
 				Vector3 dir = target.position - transform.position;
 				Quaternion lookRotation = Quaternion.LookRotation(dir);
 				Vector3 rotation = Quaternion.Lerp(partToRotate.rotation, lookRotation, Time.deltaTime * turnSpeed).eulerAngles;
 				partToRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
-
-				if (fireCountDown <= 0f) {
-					Shoot();
-					fireCountDown = 1f /fireRate;
-				} 
-				fireCountDown -= Time.deltaTime;
 		}
 
 		void Shoot() {
@@ -80,6 +112,19 @@ public class Turret : MonoBehaviour {
 			if (bullet != null) {
 				bullet.Seek(target);
 			}	
+		}
+
+		void Laser() {
+
+			targetEnemy.TakeDamage(damageOverTime * Time.deltaTime);
+			targetEnemy.Slow(slowPct);
+
+			if (!lineRenderer.enabled) {
+				lineRenderer.enabled = true;
+			}
+
+			lineRenderer.SetPosition(0, firePoint.position);
+			lineRenderer.SetPosition(1, target.position);
 		}
 
 		void OnDrawGizmosSelected() {

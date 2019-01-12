@@ -8,6 +8,8 @@ public class Bullet : MonoBehaviour {
 	public float explosionRadius = 0f;
 	public GameObject impactFX;
 
+	public int damage = 50;
+
 	public void Seek(Transform _target) {
 		
 		target = _target;
@@ -60,8 +62,14 @@ public class Bullet : MonoBehaviour {
 	}
 
 	void Damage (Transform enemy) {
-		Destroy(enemy.gameObject);
+
+		EnemyMovement e = enemy.GetComponent<EnemyMovement>();
+
+		if (e != null) {
+			 e.TakeDamage(damage);
+		}
 	} 
+
 
 	void OnDrawGizmosSelected (){
 		Gizmos.color = Color.red;
