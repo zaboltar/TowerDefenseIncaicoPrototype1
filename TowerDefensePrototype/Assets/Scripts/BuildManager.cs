@@ -18,27 +18,41 @@ public class BuildManager : MonoBehaviour {
 
 	
 private TurretBlueprint turretToBuild;
+private Node selectedNode;
+
+public NodeUI nodeUI;
 
 public bool CanBuild { get { return turretToBuild != null;}}
 public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost;}}
 
-public void BuildTurretOn (Node node) {
 
-		if (PlayerStats.Money < turretToBuild.cost){
+
+	public void SelectNode (Node node) {
+		
+		// esto no funciona tan bien y no entiendo porqué
+		if (selectedNode == node) {
+			DeselectNode();
 			return;
 		}
 
-		PlayerStats.Money -= turretToBuild.cost;
+		selectedNode = node;
+		turretToBuild = null;
 
+		nodeUI.SetTarget(node);
+	}
 
-		GameObject turret = (GameObject) Instantiate (turretToBuild.prefab, node.GetBuildPosition(), Quaternion.identity );
-	 	node.turret = turret;
-
-}
-
+	public void DeselectNode() {
+		selectedNode = null;
+		nodeUI.Hide();
+	}
 		
 	public void SelectTurretToBuild (TurretBlueprint turret) {
 		turretToBuild = turret;
+		DeselectNode();
+	}
+
+	public TurretBlueprint GetTurretToBuild() {
+		return turretToBuild;
 	}
 
 
