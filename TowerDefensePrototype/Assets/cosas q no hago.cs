@@ -19,12 +19,11 @@ animaciones del menu de pausa!
 
 no hago animaciones de la torreMenu
 
-me quedé en el ep23 health bars
-24fading
-25 wave spawn 2.0
-26 level select
-27 unlock levels
-28 winning levels
+no hice fadings
+
+como no hice fadings, tmp hago lvl select ni el resto
+ni 27 unlock levels
+ni 28 winning levels
 
 
 */
