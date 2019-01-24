@@ -1091,7 +1091,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5a67afa33bce66d4794fd87cc2348842, type: 3}
+  m_Sprite: {fileID: 21300002, guid: b75d67e7f2e23bd4ab42882b8f21f287, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4889,15 +4889,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 1, b: 0.91027117, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ac42587e3c7b83d498a5af04f23b312a, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: b75d67e7f2e23bd4ab42882b8f21f287, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -13147,21 +13147,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurret:
-    prefab: {fileID: 1606287583487620, guid: 6eaa0d36ed2e5e44294c7cbc45202b84, type: 2}
+    prefab: {fileID: 1297120714300128, guid: aa42826492dc7e7478205b0c64dcc67a, type: 2}
     cost: 100
-    upgradedPrefab: {fileID: 1606287583487620, guid: 48cedb40a49944846a755cfc87447983,
+    upgradedPrefab: {fileID: 1485196706080742, guid: 44087f6182faeb3499a70058a668466e,
       type: 2}
     upgradeCost: 250
   missileLauncer:
-    prefab: {fileID: 1315753235209376, guid: 4fe758b39a5189b43ad682e4cc07f2e8, type: 2}
+    prefab: {fileID: 1770585697406186, guid: dd0fb23cb3445884d9ac87c48da6be2a, type: 2}
     cost: 250
-    upgradedPrefab: {fileID: 1315753235209376, guid: 11ad03b452768174eb3aaf869b7fac5d,
+    upgradedPrefab: {fileID: 1670504531224844, guid: b6be1b0676a322f40a8d4e111dbf9fb3,
       type: 2}
     upgradeCost: 500
   laserBeamer:
-    prefab: {fileID: 1581038608860480, guid: d37cdccf043ec8b41ad393cbb81fed46, type: 2}
+    prefab: {fileID: 1200110819380270, guid: b0ba848d313370e429f39cf9e82fdf31, type: 2}
     cost: 350
-    upgradedPrefab: {fileID: 1581038608860480, guid: 2b983495dfbed144b9752f53854aa35a,
+    upgradedPrefab: {fileID: 1301030947556964, guid: c987f11cf31a0dc4295847ae0b556f9b,
       type: 2}
     upgradeCost: 700
 --- !u!1001 &1577049578
@@ -13532,7 +13532,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 4c739d43a76bef24b8edf03154b5dba4, type: 3}
+  m_Sprite: {fileID: 21300004, guid: b75d67e7f2e23bd4ab42882b8f21f287, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
