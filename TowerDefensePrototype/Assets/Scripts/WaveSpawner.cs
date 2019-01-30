@@ -15,11 +15,12 @@ public class WaveSpawner : MonoBehaviour {
 
 		public Text waveCountdownText;
 
+		public GameManager gameManager;
+
 		private int waveIndex = 0;
 
-			void Start(){
-				//waveIndex = 0; no se como arreglar el retry
-				countdown = timeBetweenWaves;
+			void Start() {
+				EnemiesAlive = 0;
 			}
 
 			void Update() {
@@ -28,9 +29,17 @@ public class WaveSpawner : MonoBehaviour {
 					return;
 				}
 
+				if (waveIndex == waves.Length){
+
+					gameManager.WinLevel();
+					this.enabled = false;
+					//display win info
+				}
+
 				if (countdown <= 0f) {
 					StartCoroutine(SpawnWave());
 					countdown = timeBetweenWaves;
+					return;
 				}
 
 				countdown -= Time.deltaTime;
@@ -43,9 +52,12 @@ public class WaveSpawner : MonoBehaviour {
 			IEnumerator SpawnWave(){
 				
 				
+
 				PlayerStats.Rounds++;
 
 				Wave wave = waves[waveIndex];
+
+				EnemiesAlive = wave.count;
 
 				for (int i = 0; i < wave.count; i++) {
 				 	
@@ -55,14 +67,12 @@ public class WaveSpawner : MonoBehaviour {
 
 				waveIndex++;
 
-				if (waveIndex == waves.Length){
-					this.enabled = false;
-				}
+				
 				
 			}
 
 			void SpawnEnemy(GameObject enemy) {
 				Instantiate(enemy, spawnPoint.position, spawnPoint.rotation);
-				EnemiesAlive++;
+				
 			}
 }
