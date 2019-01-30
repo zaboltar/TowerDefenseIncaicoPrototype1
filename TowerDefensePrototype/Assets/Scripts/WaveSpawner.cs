@@ -19,6 +19,7 @@ public class WaveSpawner : MonoBehaviour {
 
 			void Start(){
 				//waveIndex = 0; no se como arreglar el retry
+				countdown = timeBetweenWaves;
 			}
 
 			void Update() {
