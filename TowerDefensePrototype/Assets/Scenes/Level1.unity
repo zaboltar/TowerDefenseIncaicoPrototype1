@@ -2923,6 +2923,7 @@ MonoBehaviour:
   scrollSpeed: 5
   minY: 10
   maxY: 80
+  offSet: {x: 5, y: 0, z: 6}
 --- !u!20 &282840813
 Camera:
   m_ObjectHideFlags: 0
