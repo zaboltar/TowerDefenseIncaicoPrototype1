@@ -98,4 +98,4 @@ MonoBehaviour:
   speed: 70
   explosionRadius: 0
   impactFX: {fileID: 1859483838874346, guid: 9c2a568a4372bc340a33361ea8a57249, type: 2}
-  damage: 70
+  damage: 100

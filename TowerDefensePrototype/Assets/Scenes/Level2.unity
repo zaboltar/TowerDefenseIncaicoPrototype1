@@ -12033,12 +12033,12 @@ Prefab:
         type: 2}
       propertyPath: waves.Array.data[9].enemy
       value: 
-      objectReference: {fileID: 1835838573528458, guid: 9ee55aea368b35d43b640df9f9ee5b15,
+      objectReference: {fileID: 1419336601796346, guid: cfb31f3667aa5d241a013a7af3822098,
         type: 2}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
       propertyPath: waves.Array.data[9].count
-      value: 300
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}

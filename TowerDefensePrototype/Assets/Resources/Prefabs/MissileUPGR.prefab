@@ -125,6 +125,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  explosionRadius: 10
+  explosionRadius: 50
   impactFX: {fileID: 1582114864753100, guid: a035395feaf67064bb9456b9657e93f5, type: 2}
-  damage: 75
+  damage: 125

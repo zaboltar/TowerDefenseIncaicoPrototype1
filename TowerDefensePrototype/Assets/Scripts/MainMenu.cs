@@ -16,6 +16,10 @@ public class MainMenu : MonoBehaviour {
 
 		// NO FADER => SceneManager.LoadScene(levelToLoad);
 	}
+
+    public void ResetData () {
+        PlayerPrefs.SetInt("levelReached", 1);
+    }
 	
 	// Update is called once per frame
 	/*public void Quit () {
