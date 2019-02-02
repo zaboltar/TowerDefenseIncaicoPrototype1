@@ -11,6 +11,12 @@ public class PauseMenu : MonoBehaviour {
 
 	public SceneFader sceneFad;
 
+	private MusicController theMc;
+
+	void Start () {
+		theMc = FindObjectOfType<MusicController>();
+	}
+
 	void Update () {
 
 		if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.P) ) {
@@ -36,6 +42,7 @@ public class PauseMenu : MonoBehaviour {
 	}
 
 	public void Menu () {
+		theMc.SwitchTrack(0);
 		Toggle();
 		sceneFad.FadeTo(menuSceneName);
 	}

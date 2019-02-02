@@ -7,6 +7,8 @@ public class NodeUI : MonoBehaviour {
 
 	public GameObject ui;
 
+	private SFXManager sfxMan;
+
 	public Text upgradeCost;
 
 	public Button upgradeButton;
@@ -14,6 +16,9 @@ public class NodeUI : MonoBehaviour {
 	public Text sellAmount;
 	private Node target;
 
+	void Start () {
+		sfxMan = FindObjectOfType<SFXManager>();
+	}
 
 	public void SetTarget(Node _target) {
 		target = _target;
@@ -41,6 +46,7 @@ public class NodeUI : MonoBehaviour {
 	public void Upgrade() {
 		target.UpgradeTurret();
 		BuildManager.instance.DeselectNode();
+		sfxMan.construct.Play();
 	}
 
 	public void Sell () {

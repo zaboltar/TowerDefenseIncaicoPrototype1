@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour {
 
+	private SFXManager sfxMan;
+
 	private Transform target;
 	private EnemyMovement targetEnemy;
 
@@ -37,6 +39,7 @@ public class Turret : MonoBehaviour {
 			
 			InvokeRepeating("UpdateTarget", 0f, 0.5f);
 
+			sfxMan = FindObjectOfType<SFXManager>();
 		}
 
 
@@ -112,6 +115,7 @@ public class Turret : MonoBehaviour {
 			if (bullet != null) {
 				bullet.Seek(target);
 			}	
+			sfxMan.shoot.Play();
 		}
 
 		void Laser() {
@@ -125,6 +129,8 @@ public class Turret : MonoBehaviour {
 
 			lineRenderer.SetPosition(0, firePoint.position);
 			lineRenderer.SetPosition(1, target.position);
+
+			sfxMan.laser.Play();
 		}
 
 		void OnDrawGizmosSelected() {

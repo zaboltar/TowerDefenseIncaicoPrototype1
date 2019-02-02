@@ -4,6 +4,8 @@ public class BuildManager : MonoBehaviour {
 
 	//singleton || monada
 
+	
+
 	public static BuildManager instance;
 
 	void Awake () {
@@ -14,6 +16,8 @@ public class BuildManager : MonoBehaviour {
 
 		instance = this;
 	}
+
+
 
 
 	
@@ -53,6 +57,7 @@ public bool HasMoney { get { return PlayerStats.Money >= turretToBuild.cost;}}
 
 	public TurretBlueprint GetTurretToBuild() {
 		return turretToBuild;
+		
 	}
 
 

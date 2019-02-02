@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CompleteLevel : MonoBehaviour {
 
+	private MusicController theMc;
 
 	public string menuSceneName = "0Menu";
 
@@ -12,8 +13,14 @@ public class CompleteLevel : MonoBehaviour {
 	
 	public SceneFader sceneFad;
 
+	 void Start () {
+		theMc = FindObjectOfType<MusicController>();
+	}
+
 		public void Menu () {
 			sceneFad.FadeTo(menuSceneName);
+			theMc.SwitchTrack(0);
+			// por las webas porq no se ve el botón de menu, pero porsiaca
 		}
 
 	public void Continue (){

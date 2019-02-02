@@ -3,6 +3,8 @@ using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour {
 
+		private SFXManager sfxMan;
+
 		public Color hoverColor;
 		public Color notEnoughMoneyColor;
 		public Vector3 positionOffset;
@@ -20,6 +22,9 @@ public class Node : MonoBehaviour {
 		BuildManager buildManager;
 
 		void Start () {
+
+			sfxMan = FindObjectOfType<SFXManager>();
+	
 			rend = GetComponent<Renderer>();
 			startColor = rend.material.color;
 			buildManager = BuildManager.instance;
@@ -65,6 +70,8 @@ public class Node : MonoBehaviour {
 		 	turret = _turret;
 
 		 	turretBlueprint = blueprint;
+
+		 	sfxMan.construct.Play();
 
 
 			}

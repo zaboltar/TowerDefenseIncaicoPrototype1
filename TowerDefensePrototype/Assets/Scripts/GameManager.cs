@@ -10,11 +10,12 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject completeLvlUI;
 
-	
+	private SFXManager sfxMan;
 
 	// Use this for initialization
 	void Start () {
 		gameEnded = false;
+		sfxMan = FindObjectOfType<SFXManager>();
 	}
 	
 	// Update is called once per frame
@@ -33,6 +34,7 @@ public class GameManager : MonoBehaviour {
 		gameEnded = true;
 
 		gameOverUI.SetActive(true);
+		sfxMan.lose.Play();
 	}
 
 	public void WinLevel(){
@@ -40,7 +42,7 @@ public class GameManager : MonoBehaviour {
 			gameEnded = true;
 		completeLvlUI.SetActive(true);
 		}
-		
+		sfxMan.win.Play();
 	}
 
 }

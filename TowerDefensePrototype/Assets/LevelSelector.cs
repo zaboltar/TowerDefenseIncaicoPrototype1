@@ -7,7 +7,11 @@ public class LevelSelector : MonoBehaviour {
 
 		public Button[] levelButtons;
 
+		private MusicController theMc;
+
 		void Start() {
+
+				theMc = FindObjectOfType<MusicController>();
 
 				int levelReached = PlayerPrefs.GetInt("levelReached", 1);
 
@@ -24,6 +28,9 @@ public class LevelSelector : MonoBehaviour {
 
 	public void Select(string levelName) {
 
+		
+
+		theMc.SwitchTrack(1);
 		fader.FadeTo(levelName);
 
 	}

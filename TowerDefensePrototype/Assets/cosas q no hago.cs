@@ -19,11 +19,7 @@ animaciones del menu de pausa!
 
 no hago animaciones de la torreMenu
 
-no hice fadings
 
-como no hice fadings, tmp hago lvl select ni el resto
-ni 27 unlock levels
-ni 28 winning levels
 
 
 */
