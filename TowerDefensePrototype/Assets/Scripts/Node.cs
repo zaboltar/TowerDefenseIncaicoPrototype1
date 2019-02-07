@@ -54,6 +54,7 @@ public class Node : MonoBehaviour {
 				}
 
 				BuildTurret(buildManager.GetTurretToBuild());
+        Debug.Log("Deseleccionada");
 
 			}
 

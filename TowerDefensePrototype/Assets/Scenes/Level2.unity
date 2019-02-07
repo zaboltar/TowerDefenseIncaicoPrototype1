@@ -9076,6 +9076,7 @@ MonoBehaviour:
     upgradedPrefab: {fileID: 1301030947556964, guid: c987f11cf31a0dc4295847ae0b556f9b,
       type: 2}
     upgradeCost: 700
+  isSelected: 0
 --- !u!114 &1126567907
 MonoBehaviour:
   m_ObjectHideFlags: 0

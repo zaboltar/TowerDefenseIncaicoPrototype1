@@ -7,6 +7,8 @@ public class Shop : MonoBehaviour {
 	public TurretBlueprint missileLauncer;
 	public TurretBlueprint laserBeamer;
 
+    public bool isSelected = false;
+    
 
 	BuildManager buildManager;
 
@@ -17,6 +19,8 @@ public class Shop : MonoBehaviour {
 
 	public void SelectStandardTurret () {
 		buildManager.SelectTurretToBuild(standardTurret);
+        Debug.Log("Seleccionada");
+        isSelected = true;
 	}
 
 	public void SelectMissileLauncher () {
