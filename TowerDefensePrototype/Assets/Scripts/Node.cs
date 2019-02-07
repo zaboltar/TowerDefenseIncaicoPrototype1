@@ -4,61 +4,76 @@ using UnityEngine.EventSystems;
 public class Node : MonoBehaviour {
 
 		private SFXManager sfxMan;
+    static private Shop shop;
 
-		public Color hoverColor;
-		public Color notEnoughMoneyColor;
-		public Vector3 positionOffset;
+	public Color hoverColor;
+	public Color notEnoughMoneyColor;
+	public Vector3 positionOffset;
 
-		[HideInInspector]
-		public GameObject turret;
-		[HideInInspector]
-		public TurretBlueprint turretBlueprint;
-		[HideInInspector]
-		public bool isUpgraded = false;
+	[HideInInspector]
+	public GameObject turret;
+	[HideInInspector]
+	public TurretBlueprint turretBlueprint;
+	[HideInInspector]
+	public bool isUpgraded = false;
 
-		private Renderer rend;
-		private Color startColor;
+	private Renderer rend;
+	private Color startColor;
 
-		BuildManager buildManager;
+	BuildManager buildManager;
 
-		void Start () {
+	void Start () {
 
-			sfxMan = FindObjectOfType<SFXManager>();
+		sfxMan = FindObjectOfType<SFXManager>();
 	
-			rend = GetComponent<Renderer>();
-			startColor = rend.material.color;
-			buildManager = BuildManager.instance;
-		}
+		rend = GetComponent<Renderer>();
+		startColor = rend.material.color;
+		buildManager = BuildManager.instance;
+        if (!shop) { shop = FindObjectOfType<Shop>(); }
+	}
 
 		public Vector3 GetBuildPosition() {
 			return transform.position + positionOffset;
 		}
 
-			void OnMouseDown (){
+		void OnMouseDown (){
 
-				if (EventSystem.current.IsPointerOverGameObject()) {
-					return; 
-				}
-
-
-				if (turret != null) {
-
-					buildManager.SelectNode(this);
-
-					return;
-				}
-
-
-				if (!buildManager.CanBuild) {
-					return; 
-				}
-
-				BuildTurret(buildManager.GetTurretToBuild());
-        Debug.Log("Deseleccionada");
-
+			if (EventSystem.current.IsPointerOverGameObject()) {
+				return; 
 			}
 
-		void BuildTurret (TurretBlueprint blueprint) {
+
+			if (turret != null) {
+
+				buildManager.SelectNode(this);
+
+				return;
+			}
+
+
+			if (!buildManager.CanBuild) {
+				return; 
+			}
+
+			BuildTurret(buildManager.GetTurretToBuild());
+            DisableTurretGhost();
+            Debug.Log("Deseleccionada");
+            //currentTurretIndex = -1;
+            //shop.currentTurretIndex = -1;
+
+		}
+
+    private void OnMouseOver(){
+        if (shop.currentTurretIndex != -1 && !turret) {
+            shop.go.transform.position = transform.position;
+            if (!shop.rend.enabled) {
+                shop.rend.enabled = true;
+            }
+        }
+	}
+
+
+	void BuildTurret (TurretBlueprint blueprint) {
 
 				if (PlayerStats.Money < blueprint.cost){
 				return;
@@ -124,8 +139,16 @@ public class Node : MonoBehaviour {
 			
 		} 
 
-		void OnMouseExit () {
-			rend.material.color = startColor;
-		}
-
+	void OnMouseExit () {
+		rend.material.color = startColor;
+        DisableTurretGhost();
+    }
+		
+    void DisableTurretGhost () {
+        shop.go.transform.position = Vector3.back * 500;
+        if (shop.rend.enabled)
+        {
+            shop.rend.enabled = false;
+        }
+    }
 }
