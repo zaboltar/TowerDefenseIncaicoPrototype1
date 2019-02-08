@@ -77,7 +77,7 @@ GameObject:
   - component: {fileID: 114071467309401142}
   - component: {fileID: 114941805831451562}
   m_Layer: 0
-  m_Name: Enemy2
+  m_Name: fastjungleGhost
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -226,10 +226,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7f18d91d68b49c44b7443612d7274b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 15
+  startSpeed: 40
   speed: 10
-  startHealth: 250
-  value: 15
+  startHealth: 25
+  value: 55
   deathFX: {fileID: 1781427609661770, guid: 0ffa1c249139cfd4e9c7b65463978242, type: 2}
   healthBar: {fileID: 114013249300528076}
 --- !u!114 &114382965537613338
