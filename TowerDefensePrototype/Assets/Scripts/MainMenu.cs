@@ -5,20 +5,26 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour {
 
-
+    private ResetDataPrompt resetData;
 	public string levelToLoad = "ProtoLevel";
     public SceneFader sceneFad;
 
-	// Use this for initialization
+    void Start()
+    {
+        resetData = FindObjectOfType<ResetDataPrompt>();
+    }
+
+	// esto esta a modo de apunte
 	public void Play () {
 
         sceneFad.FadeTo(levelToLoad);
-
+        
 		// NO FADER => SceneManager.LoadScene(levelToLoad);
 	}
 
     public void ResetData () {
-        PlayerPrefs.SetInt("levelReached", 1);
+        // PlayerPrefs.SetInt("levelReached", 1); ASK FIRST
+        resetData.AskForResetData();
     }
 	
 	// Update is called once per frame
