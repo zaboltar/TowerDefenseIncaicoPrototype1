@@ -76,6 +76,7 @@ GameObject:
   - component: {fileID: 135888982039501974}
   - component: {fileID: 114740529215723536}
   - component: {fileID: 114658521131396818}
+  - component: {fileID: 54087423217733990}
   m_Layer: 0
   m_Name: fastKicker
   m_TagString: Enemy
@@ -170,6 +171,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1761806852193902}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54087423217733990
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1761806852193902}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 0
 --- !u!95 &95864742936605938
 Animator:
   serializedVersion: 3

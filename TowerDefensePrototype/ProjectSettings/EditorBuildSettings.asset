@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/0LevelSelect.unity
     guid: 4c46e7294c92f62498a2417781821378
   - enabled: 1
-    path: Assets/Scenes/Options.unity
+    path: Assets/Scenes/0Credits.unity
     guid: 38e66fbb28dd37140a44eeef64722626
   - enabled: 1
     path: Assets/Scenes/0FolkLore.unity
@@ -25,8 +25,11 @@ EditorBuildSettings:
     guid: 740a710d17d05904fb86343a94ebe696
   - enabled: 1
     path: Assets/Scenes/Level2.unity
-    guid: a19aee2a836eca0448de487cdb10545f
+    guid: 2055d169fac5dd242b274c587f0140e3
   - enabled: 1
     path: Assets/Scenes/winScene.unity
     guid: 841e583e58f9e485ebd2c1d781018f6e
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 6f36e4f9a0663d14195dd2eb7177e91e
   m_configObjects: {}

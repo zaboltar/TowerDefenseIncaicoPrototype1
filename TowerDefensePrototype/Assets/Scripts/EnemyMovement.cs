@@ -10,7 +10,7 @@ public class EnemyMovement : MonoBehaviour {
 	public float speed;
 	
 	public float startHealth = 100f;
-	private float health;
+	public float health;
 
 	private bool isDead = false;
 
