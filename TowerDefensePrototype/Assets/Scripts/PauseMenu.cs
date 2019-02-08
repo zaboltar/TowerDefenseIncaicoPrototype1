@@ -41,9 +41,12 @@ public class PauseMenu : MonoBehaviour {
 		//SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
-	public void Menu () {
-		theMc.SwitchTrack(0);
-		Toggle();
-		sceneFad.FadeTo(menuSceneName);
+    public void Menu() {
+        
+                theMc.SwitchTrack(0);
+		        Toggle();
+		        sceneFad.FadeTo(menuSceneName);
+        
+		
 	}
 }

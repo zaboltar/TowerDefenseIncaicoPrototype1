@@ -39,10 +39,19 @@ public class MusicController : MonoBehaviour {
 
 	public void SwitchTrack(int newTrack) {
 
-		musicTracks[currentTrack].Stop();
-		currentTrack = newTrack;
-		musicTracks[currentTrack].Play();
-
+        if (this != null )
+        {
+                     musicTracks[currentTrack].Stop();
+                    currentTrack = newTrack;
+                    musicTracks[currentTrack].Play();
+        }
+        
+            
+        
+        
+        
+        
+       
 	}
 
 }

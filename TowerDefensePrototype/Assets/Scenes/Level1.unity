@@ -1030,7 +1030,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -3017,11 +3017,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 489225346}
   m_Mesh: {fileID: 4300008, guid: c50f434c1afd3534299197f93158b9d3, type: 3}
---- !u!82 &492095508 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82121512339919646, guid: 34e5ef6c72585d549b407afa548f661a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1365372099}
 --- !u!1001 &498562854
 Prefab:
   m_ObjectHideFlags: 0
@@ -3059,7 +3054,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4597367415402846, guid: 7df7d52bad201f74aae105959f0aaaff, type: 2}
       propertyPath: m_RootOrder
-      value: 11
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 82044404719146496, guid: 7df7d52bad201f74aae105959f0aaaff,
         type: 2}
@@ -5981,11 +5976,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1029787049}
---- !u!82 &1045169825 stripped
-AudioSource:
-  m_PrefabParentObject: {fileID: 82202953856053730, guid: 34e5ef6c72585d549b407afa548f661a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1365372099}
 --- !u!1 &1046162259
 GameObject:
   m_ObjectHideFlags: 0
@@ -7816,17 +7806,17 @@ Prefab:
         type: 2}
       propertyPath: waves.Array.data[11].enemy
       value: 
-      objectReference: {fileID: 1419336601796346, guid: cfb31f3667aa5d241a013a7af3822098,
+      objectReference: {fileID: 1761806852193902, guid: 68049481a9efa5c40a5e9a6c1f92258b,
         type: 2}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
       propertyPath: waves.Array.data[11].count
-      value: 1
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
       propertyPath: waves.Array.data[11].rate
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
@@ -7889,52 +7879,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70f8d3cbc108f1a48bf72d51c558ff6a, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &1365372099
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -34.700043
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -0.000019073486
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4672813050637002, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1817126299672826, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 34e5ef6c72585d549b407afa548f661a, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1373609311
 GameObject:
@@ -9802,27 +9746,8 @@ Transform:
   m_Children:
   - {fileID: 1867777807}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1775575209 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1817126299672826, guid: 34e5ef6c72585d549b407afa548f661a,
-    type: 2}
-  m_PrefabInternal: {fileID: 1365372099}
---- !u!114 &1775575210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1775575209}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 016b8699777355d489712c6a77c24154, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSlider: {fileID: 1189137454}
-  music1: {fileID: 1045169825}
-  music2: {fileID: 492095508}
 --- !u!1 &1785302785
 GameObject:
   m_ObjectHideFlags: 0
