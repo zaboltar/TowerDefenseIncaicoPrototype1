@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -882,9 +882,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Inca Defender\n\n2019\nArea 51 T.C.\n\n\n2D Art:\n\nNatasha Gonzales\nFernando
+  m_Text: "Inca Defender\n\n2019\nArea 51 T.C.\n\n\n2D Art:\n\nNatasha Gonz\xE1lez\nFernando
     Garc\xEDa\nExternal collaboration of: Carlos Ravines\n\n3D Art:\n\nC\xE9sar Villafuerte\n
-    \       \nProgrammation:\n\nPiero Paz\nAlejandro Guanilo\nNatasha Gonzales\nFernando
+    \       \nProgrammation:\n\nPiero Paz\nAlejandro Guanilo\nNatasha Gonz\xE1lez\nFernando
     Garc\xEDa\nHilble Essenwanger\n\nGame Design:\n           \nJuan Guaid\xF3\n\nMusic:\n\nArrangements
     of Fernando Garc\xEDa in base of versions of Ra\xFAl G. Z\xE1rate. Cinematic music:
     Las v\xEDrgenes del Sol. Menu & Levels music: El c\xF3ndor pasa. \n\n\n"

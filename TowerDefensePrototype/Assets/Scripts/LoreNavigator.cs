@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,24 +9,14 @@ public class LoreNavigator : MonoBehaviour {
 	
 	public int loreIndex;
 
-
-	public Text name, type, info;
+	public TextMeshProUGUI name, type, info;
 
 	public GameObject[] displayObjs;
-
-	
-
-
-
-
 
 
 	// Use this for initialization
 	void Start () {
-		loreIndex = 0;
-
-		
-
+        loreIndex = 0;
 	}
 	
 	// Update is called once per frame
