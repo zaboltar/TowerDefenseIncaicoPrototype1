@@ -320,6 +320,7 @@ MonoBehaviour:
   startSpeed: 9
   speed: 10
   startHealth: 99
+  health: 0
   value: 9
   deathFX: {fileID: 1781427609661770, guid: 0ffa1c249139cfd4e9c7b65463978242, type: 2}
   healthBar: {fileID: 114597876733518752}
@@ -372,7 +373,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300006, guid: 35b7e9334e5c2b2458890547fc39946c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 1
+  m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.66, y: 1.06}
