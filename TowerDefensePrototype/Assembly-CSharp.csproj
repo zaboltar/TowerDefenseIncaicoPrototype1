@@ -99,10 +99,10 @@
     <None Include="Assets\Fantasy Skybox FREE\Fog and Ambient references.txt" />
     <None Include="Assets\GE Common Assets\Readme.txt" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>/Users/alumno/Documents/TowerDefenseIncaicoPrototype1/TowerDefensePrototype/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>/Users/alumno/Documents/GitHub/TowerDefenseIncaicoPrototype1/TowerDefensePrototype/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>/Users/alumno/Documents/TowerDefenseIncaicoPrototype1/TowerDefensePrototype/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>/Users/alumno/Documents/GitHub/TowerDefenseIncaicoPrototype1/TowerDefensePrototype/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>/Applications/Unity/Unity.app/Contents/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
