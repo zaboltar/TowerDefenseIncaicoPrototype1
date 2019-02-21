@@ -105,146 +105,6 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 140
-        y: 30
-        width: 78
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e96e5d56eca2d1d4fbb8c017be3e3099
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_1
-      rect:
-        serializedVersion: 2
-        x: 354
-        y: 29
-        width: 86
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d43a9318c49e2a242aea3cbca54ee3c6
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_2
-      rect:
-        serializedVersion: 2
-        x: 566
-        y: 23
-        width: 131
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57bb9ac5aca869f40ae860a0edcc17af
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_3
-      rect:
-        serializedVersion: 2
-        x: 778
-        y: 27
-        width: 169
-        height: 159
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2bf221f1affd1d94e877f77556a1dc72
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_4
-      rect:
-        serializedVersion: 2
-        x: 1122
-        y: 28
-        width: 78
-        height: 154
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae164bda492d56348af5dcd45dde8b05
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_5
-      rect:
-        serializedVersion: 2
-        x: 1337
-        y: 29
-        width: 86
-        height: 145
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4a087d06e78844d42a0f8df0f286d513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_6
-      rect:
-        serializedVersion: 2
-        x: 1547
-        y: 28
-        width: 131
-        height: 158
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09bc4ad2e87c51d48a7923e8c9de4d76
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: PokingPelao_7
-      rect:
-        serializedVersion: 2
-        x: 1792
         y: 26
         width: 150
         height: 159
@@ -255,7 +115,147 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2dfd7d811d975a84fba9dd3ad18efa2c
+      spriteID: 0ac8b5b4fb0e04b8f83aacea708236e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_1
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 28
+        width: 131
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ce3e8d40e31148fb87550ee72bdff09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_2
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 29
+        width: 86
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdfe4b3a4cd654d458cfa5f8e3811de6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_3
+      rect:
+        serializedVersion: 2
+        x: 882
+        y: 28
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88df17ff4ab084b75af86203f120b23b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_4
+      rect:
+        serializedVersion: 2
+        x: 1135
+        y: 27
+        width: 169
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 261ac144de77541ff943b858ded5d5f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_5
+      rect:
+        serializedVersion: 2
+        x: 1385
+        y: 23
+        width: 131
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23028487e7af94794b555127631e87cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_6
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 29
+        width: 86
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e569a84c74a3a4abca7452f0021e32b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PokingPelao_7
+      rect:
+        serializedVersion: 2
+        x: 1864
+        y: 30
+        width: 78
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca802d9004df4690a3cf463f2d4942a
       vertices: []
       indices: 
       edges: []
