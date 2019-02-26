@@ -21,11 +21,14 @@ public class EnemyMovement : MonoBehaviour {
 	[Header("Unity Stuff")]
 	public Image healthBar;
 
+    private SFXManager sfxMan;
 
-		void Start (){
-			speed = startSpeed;
-			health = startHealth;
-		}
+    void Start (){
+        sfxMan = GetComponent<SFXManager>();
+        speed = startSpeed;
+		health = startHealth;
+            
+    }
 
 		public void TakeDamage(float amount) {
 			health -= amount;
@@ -50,9 +53,13 @@ public class EnemyMovement : MonoBehaviour {
 			Destroy(effect, 5f);
 
 			WaveSpawner.EnemiesAlive--;
-			
-			Destroy(gameObject);
-		}
+
+        
+        Destroy(gameObject);
+       
+            
+        
+    }
 
 	
 	

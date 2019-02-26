@@ -1503,7 +1503,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: be309e556bb356c4699292421ef04ded, type: 2}
+  - {fileID: 2100000, guid: df9a6f2eb9dab9a4ba005287f683780a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10387,8 +10387,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: 0Menu
-  nextLevel: winScene
-  levelToUnlock: 6
+  nextLevel: Level7
+  levelToUnlock: 7
   sceneFad: {fileID: 1374221654}
 --- !u!114 &2032003871
 MonoBehaviour:

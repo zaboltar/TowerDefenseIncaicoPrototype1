@@ -115,7 +115,11 @@ public class Turret : MonoBehaviour {
 			if (bullet != null) {
 				bullet.Seek(target);
 			}	
-			sfxMan.shoot.Play();
+            if (!sfxMan.shoot.isPlaying) // clamp
+            {
+                sfxMan.shoot.Play();
+            }
+			
 		}
 
 		void Laser() {
@@ -129,8 +133,12 @@ public class Turret : MonoBehaviour {
 
 			lineRenderer.SetPosition(0, firePoint.position);
 			lineRenderer.SetPosition(1, target.position);
-
-			sfxMan.laser.Play();
+            
+            if (sfxMan.laser.isPlaying) // clamp
+            {
+            sfxMan.laser.Play();
+            }
+			
 		}
 
 		void OnDrawGizmosSelected() {

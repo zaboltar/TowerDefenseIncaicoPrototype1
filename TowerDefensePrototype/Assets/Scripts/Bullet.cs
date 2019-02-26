@@ -3,12 +3,14 @@
 public class Bullet : MonoBehaviour {
 
 	private Transform target;
-
+    
 	public float speed = 70f;
 	public float explosionRadius = 0f;
 	public GameObject impactFX;
 
 	public int damage = 50;
+
+  
 
 	public void Seek(Transform _target) {
 		
@@ -40,6 +42,9 @@ public class Bullet : MonoBehaviour {
 
 	void HitTarget () {
 		GameObject effectIns = (GameObject) Instantiate ( impactFX, transform.position, transform.rotation);
+
+       
+
 		Destroy(effectIns, 2f);
 
 		if (explosionRadius > 0f) {
@@ -48,7 +53,9 @@ public class Bullet : MonoBehaviour {
 				Damage(target);
 			}
 
-			Destroy(gameObject);
+       
+
+        Destroy(gameObject);
 
 	}
 

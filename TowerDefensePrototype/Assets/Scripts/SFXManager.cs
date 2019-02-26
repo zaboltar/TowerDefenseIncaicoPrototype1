@@ -8,7 +8,7 @@ public class SFXManager : MonoBehaviour {
 	public AudioSource shoot;
 	public AudioSource cannonShot;
 	public AudioSource construct;
-	//public AudioSource explode;
+	public AudioSource death;
 	public AudioSource laser;
 	public AudioSource lose;
 	public AudioSource win;

@@ -287,7 +287,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startSpeed: 9
   speed: 10
-  startHealth: 500
+  startHealth: 1000
   health: 0
   value: 50
   deathFX: {fileID: 1781427609661770, guid: 0ffa1c249139cfd4e9c7b65463978242, type: 2}
