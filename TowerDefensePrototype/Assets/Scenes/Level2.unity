@@ -11496,8 +11496,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   menuSceneName: 0Menu
-  nextLevel: winScene
-  levelToUnlock: 7
+  nextLevel: Level3
+  levelToUnlock: 3
   sceneFad: {fileID: 1374221654}
 --- !u!114 &2032003871
 MonoBehaviour:
