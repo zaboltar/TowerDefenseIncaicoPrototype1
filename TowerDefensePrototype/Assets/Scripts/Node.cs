@@ -18,10 +18,14 @@ public class Node : MonoBehaviour {
 	[HideInInspector]
 	public bool isUpgraded = false;
 
+    Turret turretComponent;
+
 	private Renderer rend;
 	private Color startColor;
 
 	BuildManager buildManager;
+
+    Transform turretArea { get { return BuildManager.instance.nodeUI.targetArea; }}
 
 	void Start () {
 
@@ -64,15 +68,37 @@ public class Node : MonoBehaviour {
 
 		}
 
+    void ShowArea(){
+        turretArea.position = transform.position + (Vector3.up * 0.6f);
+        turretArea.localScale = Vector3.one + (Turret.areaAxes * turretComponent.range * 2);
+        turretArea.gameObject.SetActive(true);
+    }
+
+    void HideArea(){
+        turretArea.gameObject.SetActive(false);
+    }
+     
+
+
     private void OnMouseOver(){
         if (shop.currentTurretIndex != -1 && !turret) {
             shop.go.transform.position = transform.position;
             if (!shop.rend.enabled) {
                 shop.rend.enabled = true;
             }
+        } else if (turret){
+            if (!turretArea.gameObject.activeInHierarchy) {
+                ShowArea();
+            }
         }
 	}
 
+    void OnMouseExit()
+    {
+        rend.material.color = startColor;
+        DisableTurretGhost();
+        HideArea();
+    }
 
 	void BuildTurret (TurretBlueprint blueprint) {
 
@@ -87,6 +113,9 @@ public class Node : MonoBehaviour {
 		 	turret = _turret;
 
 		 	turretBlueprint = blueprint;
+
+        turretComponent = turret.GetComponent<Turret>();
+
 
 		 	sfxMan.construct.Play();
 
@@ -106,6 +135,9 @@ public class Node : MonoBehaviour {
 			GameObject _turret = (GameObject) Instantiate (turretBlueprint.upgradedPrefab, GetBuildPosition(), Quaternion.identity );
 		 	turret = _turret;
 
+        turretComponent = turret.GetComponent<Turret>();
+
+
 		 	isUpgraded = true;
 
 			}
@@ -118,37 +150,6 @@ public class Node : MonoBehaviour {
 				 turretBlueprint = null;
 			}
 
-
-		void OnMouseEnter () {
-
-			if (EventSystem.current.IsPointerOverGameObject()) {
-				return; 
-			}
-
-			if (!buildManager.CanBuild) {
-				return; 
-			}
-
-			if (buildManager.HasMoney) {
-				rend.material.color = hoverColor;
-				} else {
-					rend.material.color = notEnoughMoneyColor;
-				}
-
-
-
-			
-		} 
-
-	void OnMouseExit () {
-		rend.material.color = startColor;
-
-
-
-    }
-
-
-		
     void DisableTurretGhost () {
         shop.go.transform.position = Vector3.back * 500;
         if (shop.rend.enabled)
