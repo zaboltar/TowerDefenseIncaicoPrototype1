@@ -6,6 +6,7 @@ public class WaveSpawner : MonoBehaviour {
 
 		public static int EnemiesAlive = 0;
 
+    [Tooltip("lorem ipsum")]
 		public Wave[] waves;
 
 		public Transform spawnPoint;

@@ -8,6 +8,8 @@ public class PlayerStats : MonoBehaviour {
 	public int startMoney = 400;
 
 	public static int Lives;
+
+    [Range(0, 50)]
 	public int startLives = 20;
 
 	public static int Rounds;
