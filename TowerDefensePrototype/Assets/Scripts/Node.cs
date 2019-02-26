@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class Node : MonoBehaviour {
@@ -141,8 +142,12 @@ public class Node : MonoBehaviour {
 
 	void OnMouseExit () {
 		rend.material.color = startColor;
-        DisableTurretGhost();
+
+
+
     }
+
+
 		
     void DisableTurretGhost () {
         shop.go.transform.position = Vector3.back * 500;
