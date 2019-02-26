@@ -33,6 +33,7 @@ public class Turret : MonoBehaviour {
 	
 	public Transform firePoint;
 
+    public static readonly Vector3 areaAxes = new Vector3(1,1,0);
 
 	// Use this for initialization
 		void Start () {

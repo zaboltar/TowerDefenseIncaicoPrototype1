@@ -16,6 +16,8 @@ public class NodeUI : MonoBehaviour {
 	public Text sellAmount;
 	private Node target;
 
+    public Transform targetArea;
+
 	void Start () {
 		sfxMan = FindObjectOfType<SFXManager>();
 	}
