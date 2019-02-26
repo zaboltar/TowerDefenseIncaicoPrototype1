@@ -28,7 +28,8 @@ public class Shop : MonoBehaviour {
         currentTurretIndex = 0;
         MeshFilter meshFilter = go.GetComponent<MeshFilter>();
         meshFilter.sharedMesh = turretList[currentTurretIndex].prefab.transform.GetChild(0).GetComponent<MeshFilter>().sharedMesh;
-	}
+        	
+    }
 
 	public void SelectMissileLauncher () {
 		buildManager.SelectTurretToBuild(missileLauncer);
