@@ -9,7 +9,7 @@ public class VolumeController : MonoBehaviour {
 
    
     public Slider sfxSlider;
-
+   
    
 
     public AudioSource SfxonebyOnecauseAmaCaveManAlpha;
@@ -36,5 +36,19 @@ public class VolumeController : MonoBehaviour {
         SfxonebyOnecauseAmaCaveManEta.volume = sfxSlider.value;
         SfxonebyOnecauseAmaCaveManTheta.volume = sfxSlider.value;
         SfxonebyOnecauseAmaCaveManIota.volume = sfxSlider.value;
+    }
+
+    public void VolumePrefs()
+    {
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManAlpha.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManBeta.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManGamma.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManDelta.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManEpsilon.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManEta.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManTheta.volume);
+        PlayerPrefs.SetFloat("SfxVolume", SfxonebyOnecauseAmaCaveManIota.volume);
+
+
     }
 }

@@ -14,13 +14,15 @@ public class MusicController : MonoBehaviour {
 
 	
 		void Start () {
-		if (!mcExists) {
+		    if (!mcExists) {
 			mcExists = true;
 			DontDestroyOnLoad(transform.gameObject);
-		} else {
+		    } else {
 			Destroy(gameObject);
-		}
-	}
+		    }
+            Time.timeScale = 1f;
+            musicTracks[currentTrack].volume = PlayerPrefs.GetFloat("MusicVolume");
+        }
 	
 	
 	void Update () {

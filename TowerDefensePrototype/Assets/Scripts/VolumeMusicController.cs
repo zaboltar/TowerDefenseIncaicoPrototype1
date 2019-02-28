@@ -19,4 +19,10 @@ public class VolumeMusicController : MonoBehaviour {
         music1.volume = musicSlider.value;
         music2.volume = musicSlider.value;
     }
+
+    public void VolumePrefs()
+    {
+        PlayerPrefs.SetFloat("MusicVolume", music1.volume);
+        PlayerPrefs.SetFloat("MusicVolume", music2.volume);
+    }
 }

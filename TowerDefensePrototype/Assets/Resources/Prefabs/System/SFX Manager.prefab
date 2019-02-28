@@ -148,7 +148,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4597367415402846}
   - component: {fileID: 114123693143243138}
-  - component: {fileID: 114579635040192750}
   m_Layer: 0
   m_Name: SFX Manager
   m_TagString: Untagged
@@ -244,8 +243,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1750522478681898}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -27.600021, y: 5.2699738, z: 50.399998}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -39.68313, y: 7.3614984, z: 57.399998}
+  m_LocalScale: {x: 1.4393513, y: 1.4236311, z: 1}
   m_Children:
   - {fileID: 4190577946130946}
   - {fileID: 4511683761490546}
@@ -511,7 +510,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 576f7872efeb6824880593dc6f1b90ba, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1181,26 +1180,7 @@ MonoBehaviour:
   shoot: {fileID: 82718710262324440}
   cannonShot: {fileID: 82403604041276280}
   construct: {fileID: 82506270318628376}
+  death: {fileID: 0}
   laser: {fileID: 82081057371231182}
   lose: {fileID: 82263845598087538}
   win: {fileID: 82863494097334872}
---- !u!114 &114579635040192750
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1750522478681898}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 055fbc320487b0c4ea6f4785a57eb9ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sfxSlider: {fileID: 0}
-  SfxonebyOnecauseAmaCaveManAlpha: {fileID: 82044404719146496}
-  SfxonebyOnecauseAmaCaveManBeta: {fileID: 82718710262324440}
-  SfxonebyOnecauseAmaCaveManGamma: {fileID: 82403604041276280}
-  SfxonebyOnecauseAmaCaveManDelta: {fileID: 82506270318628376}
-  SfxonebyOnecauseAmaCaveManEpsilon: {fileID: 82997773567256950}
-  SfxonebyOnecauseAmaCaveManEta: {fileID: 82081057371231182}
-  SfxonebyOnecauseAmaCaveManTheta: {fileID: 82263845598087538}
-  SfxonebyOnecauseAmaCaveManIota: {fileID: 82863494097334872}
