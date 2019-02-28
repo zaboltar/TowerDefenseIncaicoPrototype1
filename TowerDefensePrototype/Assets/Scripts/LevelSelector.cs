@@ -28,7 +28,8 @@ public class LevelSelector : MonoBehaviour {
 
 	public void Select(string levelName) {
 
-		theMc.SwitchTrack(1);
+		//theMc.SwitchTrack(1);
+        MusicController.instance.SwitchTrack(1);
 		fader.FadeTo(levelName);
 
 	}

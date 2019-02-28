@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SFXManager : MonoBehaviour {
+    public static SFXManager instance;
 
 	public AudioSource baseImpact;
 	public AudioSource shoot;
@@ -15,6 +16,12 @@ public class SFXManager : MonoBehaviour {
 
 	private static bool sfxManExist;
 
+
+	private void Awake()
+	{
+        instance = this;
+	}
+
 	// Use this for initialization
 	void Start () {
 		if (!sfxManExist) {
@@ -23,10 +30,25 @@ public class SFXManager : MonoBehaviour {
 		} else {
 			Destroy(gameObject);
 		}
+
+       
+           
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
+
+    public void sfxVolumeSetting (){
+        
+        baseImpact.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+        shoot.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+        cannonShot.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+        construct.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+        death.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+        laser.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+        win.volume = PlayerPrefs.GetFloat("SfxVolume", 1);
+
+    }
 }

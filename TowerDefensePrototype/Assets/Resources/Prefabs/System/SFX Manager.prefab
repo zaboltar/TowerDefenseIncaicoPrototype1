@@ -1180,7 +1180,7 @@ MonoBehaviour:
   shoot: {fileID: 82718710262324440}
   cannonShot: {fileID: 82403604041276280}
   construct: {fileID: 82506270318628376}
-  death: {fileID: 0}
+  death: {fileID: 82148864725357706}
   laser: {fileID: 82081057371231182}
   lose: {fileID: 82263845598087538}
   win: {fileID: 82863494097334872}

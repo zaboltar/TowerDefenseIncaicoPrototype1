@@ -476,6 +476,7 @@ MonoBehaviour:
   upgradeCost: {fileID: 114756581396006954}
   upgradeButton: {fileID: 114974416098705966}
   sellAmount: {fileID: 114249177459994592}
+  targetArea: {fileID: 0}
 --- !u!114 &114455218795388370
 MonoBehaviour:
   m_ObjectHideFlags: 1

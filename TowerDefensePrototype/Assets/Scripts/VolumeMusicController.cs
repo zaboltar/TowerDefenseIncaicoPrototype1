@@ -16,6 +16,7 @@ public class VolumeMusicController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log(musicSlider.value);
         music1.volume = musicSlider.value;
         music2.volume = musicSlider.value;
     }

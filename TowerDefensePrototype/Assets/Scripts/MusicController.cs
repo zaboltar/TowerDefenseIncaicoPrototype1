@@ -7,21 +7,26 @@ public class MusicController : MonoBehaviour {
 	public static bool mcExists;
 
 	public AudioSource[] musicTracks;
+    public static MusicController instance;
+
 
 	public int currentTrack;
 
 	public bool musicCanPlay;
 
-	
-		void Start () {
+
+
+	void Start () {
 		    if (!mcExists) {
 			mcExists = true;
+            instance = this;
 			DontDestroyOnLoad(transform.gameObject);
 		    } else {
 			Destroy(gameObject);
 		    }
-            Time.timeScale = 1f;
-            musicTracks[currentTrack].volume = PlayerPrefs.GetFloat("MusicVolume");
+
+           // Time.timeScale = 1f;
+            //musicTracks[currentTrack].volume = PlayerPrefs.GetFloat("MusicVolume", 1);
         }
 	
 	
@@ -40,20 +45,26 @@ public class MusicController : MonoBehaviour {
 	}
 
 	public void SwitchTrack(int newTrack) {
-
+        Debug.Log("SwitchTrack");
         if (this != null )
         {
-                     musicTracks[currentTrack].Stop();
-                    currentTrack = newTrack;
-                    musicTracks[currentTrack].Play();
+            musicTracks[currentTrack].Stop();
+
+            musicTracks[newTrack].Play();
+            currentTrack = newTrack;
         }
-        
-            
-        
-        
-        
-        
-       
+      
 	}
+
+    public void VolumeSetting () {
+        musicTracks = GetComponentsInChildren<AudioSource>();
+
+        for (int i = 0; i < musicTracks.Length; i++){
+
+            if (musicTracks[i] != null)
+                musicTracks[i].volume = PlayerPrefs.GetFloat("MusicVolume", 1);
+        }
+            
+    }
 
 }
