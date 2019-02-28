@@ -89,7 +89,8 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000002, guid: 895d3ee17e2770448805a085f4cef879,
+    type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
@@ -4496,6 +4497,11 @@ Prefab:
       propertyPath: waves.Array.data[0].count
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114760790954842460, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
+        type: 2}
+      propertyPath: startMoney
+      value: 1000
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70f8d3cbc108f1a48bf72d51c558ff6a, type: 2}
   m_IsPrefabParent: 0
@@ -7018,7 +7024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca946e6987284aefba567cba7820d7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetArea: {fileID: 1104301002}
 --- !u!4 &1580025416
 Transform:
   m_ObjectHideFlags: 0

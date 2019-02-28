@@ -7239,7 +7239,7 @@ Prefab:
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
       propertyPath: waves.Array.data[4].count
-      value: 35
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
@@ -7399,7 +7399,7 @@ Prefab:
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
       propertyPath: waves.Array.data[3].count
-      value: 55
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 114179593638915750, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}

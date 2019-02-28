@@ -1717,7 +1717,7 @@ MonoBehaviour:
   panBorderThickness: 10
   scrollSpeed: 5
   minY: 10
-  maxY: 80
+  maxY: 200
   offSet: {x: 5, y: 0, z: 6}
 --- !u!20 &282840813
 Camera:
@@ -8349,7 +8349,7 @@ Prefab:
     - target: {fileID: 114760790954842460, guid: 70f8d3cbc108f1a48bf72d51c558ff6a,
         type: 2}
       propertyPath: startMoney
-      value: 500
+      value: 5555
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 70f8d3cbc108f1a48bf72d51c558ff6a, type: 2}
