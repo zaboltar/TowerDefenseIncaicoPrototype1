@@ -796,6 +796,48 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2432cecd1529e1d40b2bd085efa11a79, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1353011063
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 101.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4126624538951446, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0f18f42a50a5848a8bfe7aa07749736b, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1369693632
 GameObject:
   m_ObjectHideFlags: 0
@@ -883,11 +925,17 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Inca Defender\n\n2019\nArea 51 T.C.\n\n\n2D Art:\n\nNatasha Gonz\xE1lez\nFernando
-    Garc\xEDa\nExternal collaboration of: Carlos Ravines and Esen Espinosa\n\n3D Art:\n\nC\xE9sar
-    Villafuerte\n        \nProgrammation:\n\nPiero Paz\nNatasha Gonz\xE1lez\nFernando
-    Garc\xEDa\nHilble Essenwanger\n\nGame Design:\n           \nJuan Guaid\xF3\n\nMusic:\n\nArrangements
+    Garc\xEDa\n\nExternal collaboration of: Carlos Ravines and Esen Espinosa\n\n3D
+    Art:\n\nC\xE9sar Villafuerte\n        \nProgrammation:\n\nPiero Paz\nFernando
+    Garc\xEDa\nHilble Essenwanger\n\nGame Design:\n           \nThis game was no designed
+    as intended in the legislation of Federal District. \n\nMusic:\n\nArrangements
     of Fernando Garc\xEDa in base of versions of Ra\xFAl G. Z\xE1rate. Cinematic music:
-    Las v\xEDrgenes del Sol. Menu & Levels music: El c\xF3ndor pasa. \n\n\n"
+    Las v\xEDrgenes del Sol. Menu & Levels music: El c\xF3ndor pasa. \n\nCharacter
+    Actors:\n\nKleto Al Ro \n\nas:\nLiviak\xB4s BloodSeeker, Naked Warlock, Mochican
+    Kicker, The Lord of the Valley of Yesbread\n\nPelao Alcal\xE1 Rodriguez\n\nas:\nFire
+    Shaman of Chicha, Drunk Megalith Bludgeoneer, Sechin Heavy Spearman, Tower #2\n\nFernando
+    Garc\xEDa\n\nas:\nAi Apaec Defender, Jungle\xB4s Ghost, Chimu Clubzerker, Chan-Chan\xB4s
+    Sentinel.\n\n"
 --- !u!222 &1369693636
 CanvasRenderer:
   m_ObjectHideFlags: 0

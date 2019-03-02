@@ -13,6 +13,7 @@ public class KeepTheVolume : MonoBehaviour {
     // Use this for initialization
     void Start () {
         musicSlider.value = PlayerPrefs.GetFloat("MusicVolume");
+        sfxSlider.value = PlayerPrefs.GetFloat("SfxVolume");
     }
 	
 	// Update is called once per frame
@@ -27,7 +28,7 @@ public class KeepTheVolume : MonoBehaviour {
     public void SetVolume() {
 
         PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
-        PlayerPrefs.SetFloat("MusicVolume", musicSlider.value);
+        
 
         PlayerPrefs.SetFloat("SfxVolume", sfxSlider.value);
 
