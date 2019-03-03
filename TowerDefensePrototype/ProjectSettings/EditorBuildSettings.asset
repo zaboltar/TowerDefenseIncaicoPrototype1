@@ -89,4 +89,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/tyScene.unity
     guid: 9f3f08a1e8fb3c1418c99db390091ff2
+  - enabled: 1
+    path: Assets/Scenes/0Tutorial.unity
+    guid: 92383dd386a03d644bc2788258585490
   m_configObjects: {}
